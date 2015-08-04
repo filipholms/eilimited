@@ -1,0 +1,169 @@
+/*cajas relativas objetos dentro absolute*/
+
+body{
+
+	font-size: 18px;
+	font-family: arial;		
+	margin: 0;
+}
+footer{
+
+	background: #222; 
+	padding: 4em;
+	position: relative;
+	bottom: 0;
+	right: 0;
+	margin-top: 0;
+}
+footer p{
+
+	text-align: center;
+	color: rgba(155,155,155,0.8);
+
+}
+header{
+
+	background: url(images/fondo.jpg) no-repeat;
+	background-size: 100% 38em;	
+	padding: 20em;
+	position: relative;
+	/*
+	centro y espacios paralelos
+	left: 8%; 
+	width: 30%;*/
+	
+
+}
+header #logo{
+
+	position: absolute;
+	left: 0;
+	top: 0;
+	margin: 0;
+	width: 100%;
+	background-color: white;
+}
+header #logo img{
+	position: relative;
+	left: 30%;
+	width: 40%;
+}
+nav{
+	
+	background: rgba(40,40,40,0.7);
+	position: absolute;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	top: 30em;
+}
+nav ul li{
+
+	list-style: none;
+	display: inline-block;
+	margin-right: 1em;
+}
+nav ul li a{
+
+	text-decoration: none;
+	font-size: 1em;
+	color: white;
+	text-transform: uppercase;
+	-webkit-transition: .23s;
+}
+nav ul  li a:hover{
+
+	color: rgba(155,155,155,0.8);
+}
+
+nav ul .seleccionada{
+
+	border: 2px solid white;
+	border-radius: 44%;
+	padding: 1em;
+
+}
+section #primario{
+
+	padding: 19em;
+	margin-bottom: 0;
+	margin-top: 0;
+	position: relative;
+	overflow: hidden;
+}
+section #primario h3{
+
+	position: absolute;
+	top: 0;
+	left: 4em;
+}
+
+section #primario .primario_imagen{
+
+	position: absolute;
+	left: 3em;
+	top: 3em;
+}
+section #primario .primario_p{
+
+	position: absolute;
+	left: 5em;
+	top: 19em;
+	width: 30em;
+
+}
+section #secundario{
+
+	background: #440; 
+	margin: 0;
+	padding: 4em;
+}
+
+section #primario aside{
+
+	position: absolute;
+	top: 0;
+	right: 5em; 
+}
+
+section #primario aside .proyecto{
+
+	border-bottom: 1px solid rgba(155,155,155,0.8);
+	font-size: .8em;
+	width: 26em;
+	padding-bottom: 2em;
+	margin-bottom: 2em;
+	overflow: hidden;
+}
+
+section #primario aside .proyecto figure{
+
+	float: left;
+}
+
+section #primario aside .proyecto div{
+	
+	color: rgba(155,155,155,0.8);
+}
+
+section #secundario{
+	background: #EEE;
+}
+section #secundario .secundario_item{ 
+	display: inline-block;
+}
+section #secundario .secundario_item a{
+	margin-top: 2em;
+	padding: 0.7em 1em;
+	background: #e95d3c;
+	border-radius: 40px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 1.1em;
+	color: #FFF;
+	-webkit-transition: 1s;
+}
+section #secundario .secundario_item a:hover{
+	background: #de3d27;
+	color: #FFF !important;
+}
